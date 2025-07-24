@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: java-devops-service
+  name: poc4-service
 spec:
   type: LoadBalancer
   selector:
-    app: java-devops-app
+    app: poc4
   ports:
     - protocol: TCP
       port: 80

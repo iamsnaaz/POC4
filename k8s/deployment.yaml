@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: poc4
-        image: iamsnaaz/my-docker-registry:poc4
+        image: iamsnaaz/poc4
         ports:
         - containerPort: 8080
       imagePullSecrets:

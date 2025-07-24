@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: poc4
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: poc4

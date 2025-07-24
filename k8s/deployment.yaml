@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: java-devops-app
+  name: poc4
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: java-devops-app
+      app: poc4
   template:
     metadata:
       labels:
-        app: java-devops-app
+        app: poc4
     spec:
       containers:
-      - name: java-devops-app
-        image: <your-dockerhub>/java-devops-app:latest
+      - name: poc4
+        image: iamsnaaz/my-docker-registry:poc4
         ports:
         - containerPort: 8080
